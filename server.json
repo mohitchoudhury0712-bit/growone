@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "dest": "backend/server.js"
+    },
+    {
+      "source": "/(.*)",
+      "dest": "frontend/$1"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "dest": "student-super-app/backend/server.js"
+    },
+    {
+      "source": "/(.*)",
+      "dest": "student-super-app/frontend/index.html"
+    }
+  ]
+}

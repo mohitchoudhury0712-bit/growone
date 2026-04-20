@@ -14,8 +14,8 @@ const Diet = () => {
 
     try {
       // Calling our newly fixed backend!
-      const res = await axios.post('http://localhost:5000/api/diet/generate', formData);
-      setDietPlan(res.data.dietPlan);
+// NEW WAY (Relative - Vercel handles the rest)
+const response = await axios.post('/api/auth/login', formData);      setDietPlan(res.data.dietPlan);
     } catch (err) {
       alert("Error generating plan: " + (err.response?.data?.message || err.message));
     } finally {

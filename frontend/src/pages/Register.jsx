@@ -9,8 +9,8 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/auth/register', formData);
-            alert("Registration Successful!");
+// NEW WAY (Relative - Vercel handles the rest)
+const response = await axios.post('/api/auth/login', formData);            alert("Registration Successful!");
             navigate('/login');
         } catch (err) {
             alert("Error: " + err.response.data.message);

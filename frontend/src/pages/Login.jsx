@@ -10,7 +10,8 @@ const Login = () => {
         e.preventDefault();
         try {
 // NEW WAY (Relative - Vercel handles the rest)
-const response = await axios.post('/api/auth/login', formData);            localStorage.setItem('token', res.data.token);
+const response = await axios.post('/api/auth/login', formData);
+            localStorage.setItem('token', res.data.token);
             localStorage.setItem('user', JSON.stringify(res.data.user));
             navigate('/home');
         } catch (err) {

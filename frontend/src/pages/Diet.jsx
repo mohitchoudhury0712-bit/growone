@@ -15,7 +15,8 @@ const Diet = () => {
     try {
       // Calling our newly fixed backend!
 // NEW WAY (Relative - Vercel handles the rest)
-const response = await axios.post('/api/auth/login', formData);      setDietPlan(res.data.dietPlan);
+growone-api.vercel.app
+     setDietPlan(res.data.dietPlan);
     } catch (err) {
       alert("Error generating plan: " + (err.response?.data?.message || err.message));
     } finally {

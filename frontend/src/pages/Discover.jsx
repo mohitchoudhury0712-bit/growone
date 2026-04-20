@@ -10,7 +10,8 @@ const Discover = () => {
     const fetchStudents = async () => {
       try {
 // NEW WAY (Relative - Vercel handles the rest)
-const response = await axios.post('/api/auth/login', formData);        setStudents(response.data);
+growone-api.vercel.app
+      setStudents(response.data);
       } catch (error) {
         console.error("Failed to fetch students");
       } finally {

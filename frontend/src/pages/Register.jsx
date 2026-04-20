@@ -10,7 +10,7 @@ const Register = () => {
         e.preventDefault();
         try {
 // NEW WAY (Relative - Vercel handles the rest)
-const response = await axios.post('/api/auth/login', formData);
+growone-api.vercel.app
             alert("Registration Successful!");
             navigate('/login');
         } catch (err) {
